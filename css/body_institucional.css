@@ -1,7 +1,7 @@
 .estadisticas{
 	margin-left: 130px;
 	width: 80%;
-	height: 419px;
+	height: 450px;
 }
 .estadisticas h2, .titulo_directores h2{
 	font-size: 30px;
@@ -343,4 +343,25 @@ height: 48%;
 		height: 32px;
 		width: 32px;
 	}	
+}
+
+@media screen and (max-width: 911px){
+	.esta_contenido{
+		flex-direction: column;
+	}
+	.fallecidos, .cont_medio,  .cont_ultimo{
+		width: 100%;
+	}
+	.estadisticas{
+		height: 1000px;
+	}
+	.recuperados_uci{
+		margin-top: 20px;;
+	}
+	.recuperados{
+		margin-top: 10px;;
+	}
+	.cont_medio{
+		margin-top: 10px;
+	}
 }
