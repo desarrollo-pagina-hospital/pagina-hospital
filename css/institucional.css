@@ -1,0 +1,167 @@
+/*menu*/
+*,*:before, *:after{
+	margin: 0;
+	padding:0;
+	outline: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Arial';
+	background-color: #ffffff;
+}
+.contenedor_p{
+	position: relative;
+}
+
+.banner img{
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+	margin-top: -80px;
+	z-index: 1;
+}
+.menu{
+	z-index: 5;
+	background-color: #040404;
+	opacity: 0.7;
+	height: 80px;
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #fff;
+	box-shadow: 5px 0 10px rgba(0,0,0,.6);
+}
+.logo{
+	padding:30px 10px;	
+	color: #fff;
+	font-size: 0.8em;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+.logo img{
+	width: 50px;
+	/*padding-right: 5px;
+	margin-left: 5px;*/
+}
+.logo .logo_ti{
+	margin-left: 10px;
+	padding-left: 10px;
+	text-align: center;
+	font-weight: normal;
+	border-left: 2px solid #fff;
+	height: 50px;
+	font-size: 1.3em;
+	margin-right: 10px;
+	padding-right: 10px;
+
+}
+.menu_item{
+	display: flex;
+	list-style: none;
+	margin-right: 10px;
+}
+.menu_item li{
+	border-radius: 3px;
+	margin:0 5px;
+
+}
+.menu_item li a{
+	padding: 7px 13px;
+	text-decoration: none;
+	font-size: 0.9em;
+	display: block;
+	color: #fff;
+}
+.menu_item li:hover, li.active{
+	background-color: rgba(0,0,.3);
+	transition: .4s;
+}
+.btn_menu{
+	margin-right: 30px;
+	font-size: 25px;
+	color: #fff;
+	cursor: pointer;
+	display: none;
+}
+ul.show{
+	top:65px;
+}
+.titulo{
+	background: #d52020;
+	border: 2px solid #fff;
+	position: absolute;
+	flex-direction: row;
+	z-index: 2;
+	display: flex;
+}
+.titulo h2{
+	text-align: flex-end;
+	color: red;
+}
+@media screen and (max-width: 952px){
+	.logo{
+		font-size: 16px;
+		padding-left: 35px;
+
+	}
+	.menu_item li a{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 1031px){
+	.menu{
+		height: 65px;
+
+	}
+	.btn_menu{
+		display: inline-flex;
+	}
+	.menu_item{
+		position: fixed;
+		width: 100vw;
+		height: calc(100%-65px);
+		background: #040404;
+		top: -100vh;
+		text-align: center;
+		transition: all .4s;
+		flex-direction: column;
+	}
+	.menu_item li{
+		margin: 30px 0 0;
+		line-height: 30px;
+	}
+	.menu_item li:hover{
+		background: none;
+
+	}
+	.menu_item li a{
+		font-size: 16px;
+		color: #fff;
+		font-weight: bold;
+	}
+	.menu_item li a:hover{
+		color: #fff;
+	}
+	.logo{
+		padding-left: 35px;
+	}
+	.logo .logo_ti{
+		padding-left: 8px;
+		margin-left: 8px;
+		margin-right: 5px;
+		padding-right: 5px;
+		font-size: 1.0em;
+	}
+}
+@media screen and (max-width: 858px) and (orientation:landscape){
+	.menu_item li{
+		margin: 5px 0 0 0;
+
+	}
+	.menu_item{
+		overflow: scroll;
+		height: calc(100%-65px);
+	}
+}

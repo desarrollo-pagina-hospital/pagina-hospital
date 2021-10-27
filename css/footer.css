@@ -1,0 +1,112 @@
+body{
+	 overflow-x: hidden;
+}
+footer{
+	background: url("../img/footer_bg.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin: auto;
+	width: 100vw;
+}
+
+.footer_contenedor{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	padding: 50px 0;
+}
+.nosotros , .hospital{
+	width: 40%;
+}
+.horario{
+	width: 20%;
+}
+.copy{
+	color: #D8D8D8;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.nosotros h2{
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+}
+.nosotros p{
+	font-family: 'Open Sans' sans-serif
+	font-weight: normal;
+	color: #D8D8D8;
+	padding-top: 35px;
+	padding-right: 25px;
+}
+.horario p{
+	padding-top: 35px;
+	padding-bottom: 20px;
+}
+.horario img{
+	width: 100px;
+	display:block;
+	margin:auto;
+}
+.footer_contenedor .footer_cont{
+	padding: 0 15px;
+	color: #D8D8D8;
+}
+.hospital h2, .horario h2{
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+}
+.hospital ul li{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+.hospital ul{
+	padding-top: 25px;
+}
+.redes_sociales ul{
+	padding-top: 25px;
+}
+.redes_sociales ul li a{
+	shape-margin: 50px;
+	display: flex;
+	color: #fff;
+	text-decoration: none;
+	align-items: center;
+}
+.redes_sociales ul li a:hover{
+	color: #000;
+}
+.redes_sociales h2{
+	padding-top: 20px;
+}
+.hospital ul li img{
+	width: 32px;
+	height: 32px;
+	margin-right: 8px;
+}
+
+@media screen and (max-width: 992px){
+
+	.nosotros , .hospital{
+		width: 35%;
+	}
+	.horario{
+		width: 30%;
+	}
+}
+@media screen and (max-width: 767px){
+
+	.nosotros, .hospital, .horario{
+		width: 100%;
+		margin-bottom: 30px;
+
+	}
+	.footer_contenedor{
+		flex-direction: column;
+	}
+}

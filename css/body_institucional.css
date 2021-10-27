@@ -1,0 +1,346 @@
+.estadisticas{
+	margin-left: 130px;
+	width: 80%;
+	height: 419px;
+}
+.estadisticas h2, .titulo_directores h2{
+	font-size: 30px;
+	color: #505050;
+	font-weight: normal;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.titulo_Estadistica, .titulo_directores{
+	border-bottom: 4px solid #C4C4C4;
+	width: 50%;
+}
+.centro{
+	width: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.fallecidos{
+
+	background-color: #1EBCB0;
+	width: 33.33%;
+}
+.cont_medio{
+	width: 33.33%;
+	margin-right: 15px;
+}
+.cont_ultimo{
+	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+.recuperados{
+background-color: #05B8D2;
+margin-bottom: 4%;
+height: 48%;
+}
+.recuperados_uci{
+background-color: #84B546;
+height: 48%;
+display: flex;
+}
+.altas_uci{
+background-color: #8A7DBE;
+height: 48%;
+}
+.esta_contenido{
+	padding-top: 15px;
+	display: flex;
+	background-color: #fff;
+	width: 100%;
+	height: 85%;
+}
+.fallecidos{
+	margin-right: 15px;
+}
+/*tajeta fallecidos*/
+.fallecidos .id_fallecidos , .string_fallecidos{
+	text-align: center;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+.id_fallecidos{
+	font-size: 50px;
+	padding-top: 70px;
+}
+.string_fallecidos{
+	font-size: 15px;
+	padding-top: 8px;
+	font-family: 'Open Sans', sans-serif;
+}
+.fallecidos img{
+	padding-top: 8px;
+	display:block;
+	margin:auto;
+}
+/*tarjeta de en medio*/
+.medio , .string{
+	color: #fff;
+}
+.total_hospi, .recuperados_uci{
+	background-color: #FDA332;
+	margin-bottom: 4%;
+	height: 48%;
+	display: flex;
+	flex-direction: column;
+}
+.hopital_contenido img, .recuperados_uci_contenido img, .altas_contenido img, .recuperados_contenido img{
+	width: 100px;
+}
+
+.hopital_contenido, .recuperados_uci_contenido, .recuperados_contenido, .altas_contenido{ 
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 5px 5px;
+	justify-content: space-around;
+	height: 80%;
+}
+.string_hospitalizados, .string_recuperados, .string_recuperados_uci , .string_total_alta{
+	text-align: center;
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+.id_hospitalizados, .id_recuperados_uci, .id_altas, .id_recuperados{
+	font-size: 40px;
+	font-family: 'Raleway', sans-serif;
+	padding-left: 15px;
+}
+
+/*slider*/
+
+
+.contariner{
+	width: 90%;
+	max-height: 100vh;
+	max-width: 100%;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+}
+.slider{
+	padding:  40px 0;
+}
+.slider_container{
+	display: grid;
+	grid-template-columns: 0px 1fr 0px;
+	align-items: center;
+	/*gap: 1em;*/
+}
+.slider_body{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	opacity: 0;
+	pointer-events: none;
+	display: grid;
+	grid-template-columns: 1fr max-content;
+	align-items: center;
+	transition: opacity 1.5s;
+
+}
+.slider_body_show{
+	opacity: 1;
+	pointer-events: unset;
+}
+.slider_img{
+	width: 230px;
+	height: 230px;
+	border-right: 50%;
+	display: block;
+	margin: 0 auto;
+}
+/*.slider_texts{
+	/*max-width: 100%;*/
+	/*background-color: red;
+	display: flex;
+	flex-direction: row;
+}*/
+.subtitulo{
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+
+}
+.descripcion{
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 1.7;
+}
+.slider_arrow{
+	cursor: pointer;
+	width: 90%;
+}
+.slider_arrow:nth-of-type(2){
+	justify-self: end;
+}
+
+@media screen and (max-width: 768px){
+
+	.slider_body{
+		grid-template-columns: 1fr;
+		grid-template-rows: max-content 1fr;
+		/*gap: 1em;*/
+	}
+	.slider_picture{
+		grid-row : 1/2;
+
+	}
+	.slider_img{
+		width: 218px;
+		height: 218px;
+	}
+	.slider_texts{
+		flex-direction: column;
+		
+	}
+	.personas2{
+		display: none;
+	}
+}
+@media screen and (max-width: 425px){
+	.slider_container{
+		grid-template-columns: 0px 1fr 0px;
+		
+	}
+	.slider_arrow{
+		width: 100%;
+	}
+	.slider_img{
+		width: 180px;
+		height: 180px;
+
+	}
+	.subtitulo{
+		font-size: 2rem;
+		margin-bottom: 15px;
+
+	}
+	.descripcion{
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+}
+.slider_figura img{
+	width: 100%;
+	z-index: 1;
+}
+.slider_figura{
+	background-color: #fff;
+}
+.contain{
+	z-index: 5;
+	
+}
+.slider_{
+	background-color: #fff;
+}
+.slider_texts{
+	position: relative;
+	display: inline-block;
+	background-color: #f0f0f0;
+}
+.slider_texts img{
+	width: 100%;
+	z-index: 1;
+
+}
+.container{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	/*aqui es el fondo*/
+}
+.slider_body{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+.slider_arrow{
+	z-index: 10;
+	width: 64px;
+	height: 64px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.slider_texts .fondo{
+	background-color: #212121;
+	opacity: 0.7;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top:0;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.texto1{
+	
+	font-size: 40px;
+	color: #fff;
+	z-index: 6;
+	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+	justify-content: center;
+	margin-bottom: 60px;
+
+}
+.texto2{
+	margin-top: 60px;
+	font-size: 24px;
+	top: 322px;
+	left: 330px;
+	z-index: 7;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+.fondo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+
+}
+@media screen and (max-width: 768px){
+	.texto1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.texto2{
+		font-size: 16px;
+		margin-top: 20px;
+	}
+	.slider_arrow{
+		height: 45px;
+		width: 45px;
+	}
+
+}
+@media screen and (max-width: 425px){
+	.texto1{
+		font-size: 12px;
+		margin-bottom: 8px;
+	}
+	.texto2{
+		font-size: 9px;
+		margin-top: 8px;
+		text-align: center;
+	}
+	.slider_arrow{
+		height: 32px;
+		width: 32px;
+	}	
+}
