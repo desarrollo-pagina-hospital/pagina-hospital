@@ -1,0 +1,43 @@
+.centro{
+  display: flex;
+
+  flex-direction: column;
+}
+
+.carrusel{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    min-height: 100px;
+    width: 100vw;
+    height: 250px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carta{
+
+    background-color:#9F73CE;
+    width: 200px;
+    height: 200px;
+    border-radius: 0px 40px 0px 40px;
+}
+
+.uno{
+background-color:#9F73CE
+}
+.dos{
+background-color: #32196C;
+
+}
+.tres{
+background-color: #7C5892;
+
+}
+.cuatros{
+    background-color: #32196C;
+
+
+}
+/*#9F73CE
+*/
